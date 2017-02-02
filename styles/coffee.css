@@ -1,0 +1,50 @@
+html {
+    background-color: lightslategrey;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    display: block;
+    border-style: solid;
+    border-width: 5px;
+    border-color: slategrey;
+    margin: auto auto 10px auto;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 1em;
+    text-align: center;
+}
+
+#title {
+    font-size: 3em;
+    text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+a:visited {
+    font-style:italic;
+}
+
+div {
+    width: 400px;
+    height: 30px;
+    border: 3px solid slategrey;
+    margin: auto;
+    text-align: center;
+    background-color: slategrey;
+    border-radius: 10px;
+}
+
+#footer {
+    font-size: 0.6em;
+}
