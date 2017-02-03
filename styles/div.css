@@ -3,29 +3,33 @@ html {
     font-family: open+sans, sans-serif;
 }
 
-#title {
-    font-size: 1.5em;
+.navi {
+    list-style-type: none;
+    border-bottom: 1px solid black;
     text-align: center;
-    border-bottom: 1px solid black;
-    width: 700px;
-    height: 65px;
-    margin: auto;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
 }
 
-#navi {
-    height: 50px;
-    width: 700px;
-    margin: auto auto 10px auto;
-    border-bottom: 1px solid black;
-}
-
-div div {
-    height: 30px;
-    width: 80px;
+.navi li {
     display: inline-block;
+    margin: 0px 30px 0px 30px;
+}
+
+#title {
+    /*border-bottom: 1px solid black;*/
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+#title > p {
+    font-size: 2.5em;
+    font-style: italic;
     text-align: center;
-    margin: 10px 30px auto 55px;
-    line-height: 30px;
+    line-height: 10px;
     text-decoration: underline;
 }
 
@@ -36,20 +40,26 @@ a {
 
 #main {
     background-color: white;
-    height: 725px;
-    width: 700px;
+    height: 535px;
+    width: 80%;
     margin: auto;
-    overflow-y: auto;
+    overflow-y: scroll;
     padding: 5px;
 }
 
+#main h4 {
+    text-align: center;
+}
+
+#main p {
+    text-align: center;
+}
+
 #footer {
-    display: block;
     height: 30px;
     border-top: 1px solid black;
-    position: fixed;
-    margin-left: 750px;
-    margin-top: 10px;
+    margin: 10px auto auto auto;
+    text-align: center;
 }
 
 #footer p {
