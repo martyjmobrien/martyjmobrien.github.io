@@ -19,25 +19,40 @@
     <div id="title"><p>Adventures In Coding.</p></div>
 
     <div id ="main">
-        <h4>Test post</h4>
+        <hr>
+            <p class="post-title"><strong>Still Alive...</strong></p>
+            <p class="post-date">2nd Feb 2017</p>
+        <hr>
         <p>This is a test post to see if the footer gets pushed down.</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
+        <p>After a very long period away from coding I am (finally) back.</br></p>
+           
+        <p>Previously I took the path of Codecademy, Learn to Program etc and whilst they were all great resources (bar some hand holding) 
+           I am taking a different approach now. What I felt was lacking previously was a clear path. One which I could work through and one 
+           where each step fed into the next to build and reinforce knowledge. With this in mind I am working my way through The Odin Project. 
+           It is still early days but I really like how it is a) structured and b) geared around using the best of what the internet has to offer 
+           and not just giving one perspective.</br></p>
+
+        <p>An example of this was in the introductory lessons on using git. Not only did it talk about what git is, the difference between 
+           git and GitHub and the basics of how to use it in the terminal but it also linked to outside resources which reinforced these ideas, 
+           gave different/more thorough explanations and also went into more detailed terminology. I also find that creating a repository, 
+           cloning it to your computer, seeing the files appear and seeing realtime changes when pushing to GitHub gives a much greater 
+           understanding compared to Codecademy (which the Odin project actually links to as a very basic initial lesson in git).</br></p>
+
+        <p>At the same time as this I am also still looking at the Duplicate File finding app I was making. When I left it it could only 
+           add an incrementing number to the very end of the file (after the extension) and the numbers wouldn’t be specific to the file 
+           dupe count, instead it would just keep counting from 1 (so eight varying dupes would result in the 8th dupe having the number eight, 
+           even if there was one duplicate of that particular file). Having come back to it I realised two things:</br></p>
+
+        <p>1: The use of File.basename was only removing the file path - I wasn’t giving it an argument to remove the extension as well.</br></p>
+
+        <p>2: Changing the basename_array to a hash would allow me to track individual file duplications by incrementing their value.</br></p>
+
+        <p>By implementing these changes I was able to hold the ext name in a variable, strip just the file name out, check it against the hash, 
+           add the value to the end of the file, increment the value and then add the original ext name back on. Phew!</br></p>
+
+        <p>Still more to do (such as specifying where the files are/where you want the duplicates to be saved) by it’s always nice to 
+           overcome a challenge, however small!</br></p>
+
     </div>
 
     <div id="footer"><p>Created by Marty O'Brien. Copyright 2017. <a href="www.martyjmobrien.com" target="_blank">www.martyjmobrien.com</a></p></div>
