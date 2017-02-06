@@ -66,7 +66,8 @@ a {
     font-size: 0.7em;
 }
 
-#main p {
+
+.post-text {
     text-align: left;
 }
 
