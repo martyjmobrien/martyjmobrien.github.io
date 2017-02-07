@@ -61,27 +61,9 @@ article {
     padding: 10px 20px 0px 20px;
 }
 
-article hr {
-     align: center;
-     width: 100%;
-     border-bottom: 0.5px solid gold;
-}
-
-.post-title {
-    text-align: center;
-    line-height: 1px;
-    font-size: 1.5em;
-}
-
-.post-date {
-    text-align: center;
-    font-size: 0.7em;
-}
-
-
-.post-text {
-    text-align: left;
+article p {
     font-size: 0.9em;
+    text-align: center;
 }
 
 footer {
@@ -99,3 +81,4 @@ footer p {
     font-size: 0.8em;
     line-height: 1px;
 }
+
