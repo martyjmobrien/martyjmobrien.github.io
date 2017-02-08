@@ -1,6 +1,6 @@
 html {
     background-color: #ffffff;
-    font-family: open+sans, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 100vh;
     width: 100vw;
 }
@@ -12,6 +12,7 @@ html {
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 #main_navi {
@@ -40,24 +41,25 @@ a {
 #title {
     position: fixed;
     top: 30px;
-    margin: 0px auto 5px auto;
+    margin: 10px auto 5px auto;
     text-align: center;
     width: 100%;
-    font-size: 3em;
+    font-size: 2.5em;
     border-bottom: 1px solid black;
     background-color: white;
+    padding-bottom: 10px;
 }
 
 article {
     align: center;
     background-color: white;
     width: 50%;
-    height: 75vh;
+    height: 73vh;
     margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
     overflow-y: scroll;
-    padding: 10px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 article hr {
@@ -68,8 +70,8 @@ article hr {
 
 .post-title {
     text-align: center;
-    line-height: 1px;
     font-size: 1.5em;
+    padding-bottom: 5px;
 }
 
 .post-date {
@@ -79,8 +81,9 @@ article hr {
 
 
 .post-text {
-    text-align: center;
+    text-align: left;
     font-size: 0.9em;
+    line-height: 25px;
 }
 
 footer {
@@ -95,6 +98,6 @@ footer {
 
 footer p {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.7em;
     line-height: 1px;
 }
