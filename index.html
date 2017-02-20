@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link href="styles/reset.css" rel="stylesheet" type="text/css">
     <link href="styles/index.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -11,15 +12,16 @@
 <body>
     <nav id="main_navi">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
+          <li><a class="navi_links" href="index.html">Home</a></li>
+          <li><a class="navi_links" href="about.html">About</a></li>
+          <li><a class="navi_links" href="projects.html">Projects</a></li>
           <li><a class="navi_links" href="mailto:marty@martyjmobrien.com?Subject=Website%20enquiry" target="_top">Contact</a></li>
         </ul>
     </nav>
 
     <h1 id="title">Adventures In Coding.</h1>
 
+<<<<<<< HEAD
     <article>
         <!--<hr>
             <p class="post-title"><strong></strong></p>
@@ -42,18 +44,22 @@
                to document the changes and refinement as I learn more. An example of this would be the use of .select, .inject and .reduce in place of empty arrays, .each iterations and if/else statements.</p>
         </section>
         
+=======
+    <article id="article">
+>>>>>>> 9bf44624d17aeec3679ec37ae4ce4cef1fc14a79
         <hr>
             <p class="post-title"><strong>HTML & CSS.</strong></p>
             <p class="post-date">7th Feb 2017</p>
         <hr>
         <section class="post-text">
-            <p>As a way of really understanding the HTML and CSS section of the Odin Project course I decided to make this website.</p> 
+            <p>As a way of really understanding the HTML and CSS section of the Odin Project course I decided to make this website.</p><br>
             
-            <p>The idea behind it is to not only have a place to document my studies and projects, as I did through my tumblr account, but to also have a place where I can experiement and try new ideas.
-               With this in mind, as my knowledge of both HTML and CSS evolve so will the look and feel of this website.</p>
+            <p>The idea behind it is to not only have a place to document my studies and projects, as I did through my tumblr account, but to also 
+               have a place where I can experiement and try new ideas. With this in mind, as my knowledge of both HTML and CSS evolve so will the 
+               look and feel of this website.</p><br>
 
-            <p>Currently only the main page and Contact link are available (the top navigation links will follow) and I am still tweaking the layout. I am also working towards having it correctly scale to different
-               screen sizes and have the navigation links open within the main article window.</p>
+            <p>Currently I am working towards having it correctly scale to different screen sizes and have the navigation 
+               links open within the main article window.</p>
         </section>
 
         <hr>
@@ -61,31 +67,31 @@
             <p class="post-date">2nd Feb 2017</p>
         <hr>
         <section class="post-text">
-        <p>After a very long period away from coding I am (finally) back.</p>
+        <p>After a very long period away from coding I am (finally) back.</p><br>
            
         <p>Previously I took the path of Codecademy, Learn to Program etc and whilst they were all great resources (bar some hand holding) 
            I am taking a different approach now. What I felt was lacking previously was a clear path. One which I could work through and one 
            where each step fed into the next to build and reinforce knowledge. With this in mind I am working my way through The Odin Project. 
            It is still early days but I really like how it is a) structured and b) geared around using the best of what the internet has to offer 
-           and not just giving one perspective.</p>
+           and not just giving one perspective.</p><br>
 
         <p>An example of this was in the introductory lessons on using git. Not only did it talk about what git is, the difference between 
            git and GitHub and the basics of how to use it in the terminal but it also linked to outside resources which reinforced these ideas, 
            gave different/more thorough explanations and also went into more detailed terminology. I also find that creating a repository, 
            cloning it to your computer, seeing the files appear and seeing realtime changes when pushing to GitHub gives a much greater 
-           understanding compared to Codecademy (which the Odin project actually links to as a very basic initial lesson in git).</p>
+           understanding compared to Codecademy (which the Odin project actually links to as a very basic initial lesson in git).</p><br>
 
         <p>At the same time as this I am also still looking at the Duplicate File finding app I was making. When I left it it could only 
            add an incrementing number to the very end of the file (after the extension) and the numbers wouldn’t be specific to the file 
            dupe count, instead it would just keep counting from 1 (so eight varying dupes would result in the 8th dupe having the number eight, 
-           even if there was one duplicate of that particular file). Having come back to it I realised two things:</p>
+           even if there was one duplicate of that particular file). Having come back to it I realised two things:</p><br>
 
-        <p>1: The use of File.basename was only removing the file path - I wasn’t giving it an argument to remove the extension as well.</p>
+        <p>1: The use of File.basename was only removing the file path - I wasn’t giving it an argument to remove the extension as well.</p><br>
 
-        <p>2: Changing the basename_array to a hash would allow me to track individual file duplications by incrementing their value.</p>
+        <p>2: Changing the basename_array to a hash would allow me to track individual file duplications by incrementing their value.</p><br>
 
         <p>By implementing these changes I was able to hold the ext name in a variable, strip just the file name out, check it against the hash, 
-           add the value to the end of the file, increment the value and then add the original ext name back on. Phew!</p>
+           add the value to the end of the file, increment the value and then add the original ext name back on. Phew!</p><br>
 
         <p>Still more to do (such as specifying where the files are/where you want the duplicates to be saved) by it’s always nice to 
            overcome a challenge, however small!</p>
@@ -107,27 +113,29 @@
             <p class="post-date">3rd Jun 2016</p>
         <hr>
         <section class="post-text">
-            <p>Another update today to my GitHub.</p>
+            <p>Another update today to my GitHub.</p><br>
 
-            <p>https://github.com/martyjmobrien</p>
+            <p>https://github.com/martyjmobrien</p><br>
 
-            <p>This time it’s a text based ‘Adventure’ game. The main purpose of writing it was to utilise a few things that I have learnt so that I could really understand how and why they work. 
-                This is a really important point of my learning process. Reading and copying is all well and good but you can only truly understand a concept once you have done it, manipulated it 
-                and even broken it.</p>
+            <p>This time it’s a text based ‘Adventure’ game. The main purpose of writing it was to utilise a few things that I have learnt so that I 
+               could really understand how and why they work. This is a really important point of my learning process. Reading and copying is all 
+               well and good but you can only truly understand a concept once you have done it, manipulated it and even broken it.</p><br>
 
-            <p>Within the text based game I used multi-line strings to write the narrative, shortening the writing time dramatically over the repeated use of puts. I also used nested if-statements 
-                and multi choice user inputs. I also used %s instead of #{}. I understand the concept of what this does but I think I may change it back to #{tool} in version 2 as I think it reads 
-                more easily that way.</p>
+            <p>Within the text based game I used multi-line strings to write the narrative, shortening the writing time dramatically over the repeated 
+               use of puts. I also used nested if-statements and multi choice user inputs. I also used %s instead of #{}. I understand the concept 
+               of what this does but I think I may change it back to #{tool} in version 2 as I think it reads more easily that way.</p><br>
 
-            <p>This is version 1 of the game and what I plan to do it add to it as I learn more. Although I have gone through the whole of the Codecademy course on Ruby I really feel that I am grasping 
-                concepts a lot better with Learn Ruby the hard way so this will be updated as I venture through the course.</p>
+            <p>This is version 1 of the game and what I plan to do it add to it as I learn more. Although I have gone through the whole of the 
+               Codecademy course on Ruby I really feel that I am grasping concepts a lot better with Learn Ruby the hard way so this will be 
+               updated as I venture through the course.</p><br>
 
-            <p>One thing I would like to add and should be adding soon (in a version 2) will be either a while loop or until loop (not too sure which one until I fully understand which both are best for!) 
-                which will prompt the user to re-input answers if they do not match what the game expects. This would create something along the lines of:</p>
+            <p>One thing I would like to add and should be adding soon (in a version 2) will be either a while loop or until loop (not too sure 
+               which one until I fully understand which both are best for!) which will prompt the user to re-input answers if they do not match 
+               what the game expects. This would create something along the lines of:</p><br>
 
-            <p>“Which door do you choose? 1, 2 or 3?”</p>
+            <p>“Which door do you choose? 1, 2 or 3?”</p><br>
 
-            <p>> 4</p>
+            <p>> 4</p><br>
 
             <p>“There isn’t a fourth door. Please choose between doors 1, 2 and 3″</p>
         </section>
@@ -137,16 +145,18 @@
             <p class="post-date">2nd Jun 2016</p>
         <hr>
         <section class="post-text">
-            <p>I finally got around to setting up my GitHub!</p>
+            <p>I finally got around to setting up my GitHub!</p><br>
 
-            <p>https://github.com/martyjmobrien</p>
+            <p>https://github.com/martyjmobrien</p><br>
 
-            <p>As with all my stuff at the moment, this is all done within the Ruby language.</p>
+            <p>As with all my stuff at the moment, this is all done within the Ruby language.</p><br>
 
-            <p>At the moment there is only one block of code which gets a users input and using an if statement compares it to an already defined variable. My example uses a simple, public, bank account request. 
-                I will also be uploading an example which uses a private method in which the pin is kept, allowing it to only be called within the object it’s contained in.</p>
+            <p>At the moment there is only one block of code which gets a users input and using an if statement compares it to an already defined variable. 
+               My example uses a simple, public, bank account request. I will also be uploading an example which uses a private method in which the 
+               pin is kept, allowing it to only be called within the object it’s contained in.</p><br>
 
-            <p>As I have already learnt quite a bit of other code at this point I will also be uploading older examples. This will include more on if statements, loops, booleans etc.</p>
+            <p>As I have already learnt quite a bit of other code at this point I will also be uploading older examples. This will include more on 
+               if statements, loops, booleans etc.</p>
         </section>
 
         <hr>
@@ -154,27 +164,32 @@
             <p class="post-date">26th May 2016</p>
         <hr>
         <section class="post-text">
-            <p>It may seem as though I have thrown in the coding towel and called it quits but really I’ve just been lazy at keeping up with posts.
+            <p>It may seem as though I have thrown in the coding towel and called it quits but really I’ve just been lazy at keeping up with posts.</p><br>
 
-            <p>In the time between my last post and this one I have completed the codecademy HTML and CSS courses as well as the Ruby course. I have now moved on to learning the UNIX terminal 
-               and More Ruby using Zed Shaw’s Learn Ruby The Hard Way. The main reason I started learning Ruby from Zed Shaw after completing the Codecademy course was because I felt like I didn’t 
-               really finish the course with the knowledge I wanted or thought I should have attained. My biggest problem was using the browser based code editor. I felt this created a disconnect by 
-               simply allowing you to run code and instantly see the results. As a coding newbie I really value the approach in Learn Ruby The Hard Way as you have to write out the code in an editor 
-               (Wrangler for me) and then use the terminal to run the code. This has made me feel more connected to the process and has also allowed me to further my knowledge of the command line.
+            <p>In the time between my last post and this one I have completed the codecademy HTML and CSS courses as well as the Ruby course. I have now 
+               moved on to learning the UNIX terminal and More Ruby using Zed Shaw’s Learn Ruby The Hard Way. The main reason I started learning Ruby 
+               from Zed Shaw after completing the Codecademy course was because I felt like I didn’t really finish the course with the knowledge I wanted 
+               or thought I should have attained. My biggest problem was using the browser based code editor. I felt this created a disconnect by 
+               simply allowing you to run code and instantly see the results. As a coding newbie I really value the approach in Learn Ruby The Hard Way 
+               as you have to write out the code in an editor (Wrangler for me) and then use the terminal to run the code. This has made me feel more 
+               connected to the process and has also allowed me to further my knowledge of the command line.</p><br>
 
-            <p>I have found learning more about the terminal and it’s commands really interesting. The ability to change in and out of folders, create new documents, list contents etc has given 
-               me a much greater sense of what is actually happening ‘under the hood’, so to speak. Unlike simply double clicking or drag and drop, the terminal has a more tactile feel to it. 
-               Having to actually tell the computer “OK, make a new folder, move everything from that other folder into the new one and then delete the old one” gives an actual 
-               sense of achievement, which for someone new to    coding is really important. The little victories really make learning fun and interesting, at least for myself. Take this simple 
-               terminal command:
+            <p>I have found learning more about the terminal and it’s commands really interesting. The ability to change in and out of folders, create 
+               new documents, list contents etc has given me a much greater sense of what is actually happening ‘under the hood’, so to speak. Unlike 
+               simply double clicking or drag and drop, the terminal has a more tactile feel to it. Having to actually tell the computer “OK, make a 
+               new folder, move everything from that other folder into the new one and then delete the old one” gives an actual sense of achievement, 
+               which for someone new to coding is really important. The little victories really make learning fun and interesting, at least for myself. 
+               Take this simple terminal command:</p><br>
 
-            <p>echo This is my new file > new_file.txt 
+            <p>echo This is my new file > new_file.txt</p><br>
 
-            <p>Having that command actually produce a new file with “This is my new file” as it’s content made me want to learn and try more as it’s a tangible product of what I have learnt.
+            <p>Having that command actually produce a new file with “This is my new file” as it’s content made me want to learn and try more as it’s a 
+               tangible product of what I have learnt.</p><br>
 
-            <p>I am only half way through LRTHW but at this point I am not only enjoying it more than Codecademy but I also feel that I am learning more. One of the things I love is that it is 
-               challenging and Zed doesn’t try to hide that fact in any way. I will update on my experience as a whole once I finish the course but at this point I would have to say 
-               that LRTHW is a better experience. The code isn’t hidden and there isn’t any hand holding.
+            <p>I am only half way through LRTHW but at this point I am not only enjoying it more than Codecademy but I also feel that I am learning more. 
+               One of the things I love is that it is challenging and Zed doesn’t try to hide that fact in any way. I will update on my experience as a 
+               whole once I finish the course but at this point I would have to say that LRTHW is a better experience. The code isn’t hidden and there 
+               isn’t any hand holding.</p><br>
 
             <p>I will try to be better at updating my learning experience from here on out which will hopefully mean less of these mammoth entries!</p>
         </section>
@@ -184,22 +199,26 @@
             <p class="post-date">14th Apr 2016</p>
         <hr>
         <section class="post-text">
-            <p>I have just completed the Stanford CS101 online course over at Coursera and have now moved on to the HTML & CSS course at Codecademy. These are my impressions of both so far.
+            <p>I have just completed the Stanford CS101 online course over at Coursera and have now moved on to the HTML & CSS course at Codecademy. 
+               These are my impressions of both so far.</p><br>
 
-            <p>CS101:
+            <p>CS101:</p><br>
 
-            <p>The stanford CS101 course is a very worthwhile course to go through for a beginner like myself. It not only introduces you to coding but gives insight into the mindset of a programmer. 
-                Nick Parlante, the course lecturer, is superb at what he does. Engaging, interesting, and highly intelligent.
+            <p>The stanford CS101 course is a very worthwhile course to go through for a beginner like myself. It not only introduces you to coding but 
+               gives insight into the mindset of a programmer. Nick Parlante, the course lecturer, is superb at what he does. Engaging, interesting, 
+               and highly intelligent.</p><br>
 
-            <p>Codecademy HTML & CSS:
+            <p>Codecademy HTML & CSS:</p><br>
 
-            <p>Overall I would say this course is good so far but there are certain areas in which I feel quite frustrated. Often times you will get to the end of a section and it will say 
-               “Why not try adding images in the divs you have just made” just for you to spend ages banging your head against a wall until you find out that ‘Position in CSS’ is the next course?! 
-               Also, in some parts I have found it to be too hand holding, telling you parameters to add in their code form instead of simply stating what is needed and making the user think and remember. 
+            <p>Overall I would say this course is good so far but there are certain areas in which I feel quite frustrated. Often times you will get 
+               to the end of a section and it will say “Why not try adding images in the divs you have just made” just for you to spend ages banging 
+               your head against a wall until you find out that ‘Position in CSS’ is the next course?! Also, in some parts I have found it to be too hand 
+               holding, telling you parameters to add in their code form instead of simply stating what is needed and making the user think and remember.</p><br> 
 
-            <p>I am near the end of the CSS course now and I think that I will go through the whole HTML/CSS course again to make sure it has all gone in. One tactic I have been using, 
-               which I think has helped, has been to use a HTML/CSS editor (in my case Brackets) along the Codecademy course. By doing so I have been able to explore what changing certain 
-               pieces of coding does etc without the restraints of the inbuilt Codecademy editor telling me I haven’t successfully inputted the course EXACTLY as it want me too. </p>
+            <p>I am near the end of the CSS course now and I think that I will go through the whole HTML/CSS course again to make sure it has all gone in. 
+               One tactic I have been using, which I think has helped, has been to use a HTML/CSS editor (in my case Brackets) along the Codecademy course. 
+               By doing so I have been able to explore what changing certain pieces of coding does etc without the restraints of the inbuilt Codecademy 
+               editor telling me I haven’t successfully inputted the course EXACTLY as it want me too.</p>
         </section>
 
         <hr>
