@@ -36,6 +36,13 @@ a {
     padding: 5px 0px 5px 0px;
     text-decoration: underline;
     background-color: white;
+}
+
+#main_navi li:nth-child(1) {
+    opacity: 1;
+}
+
+#main_navi li:nth-child(n+2) {
     opacity: 0.5;
 }
 
@@ -55,18 +62,24 @@ article {
     align: center;
     background-color: white;
     width: 50%;
-    height: 73vh;
+    height: 79vh;
     margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
     overflow-y: scroll;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 15px 20px;
+    box-shadow: 0.5px 0.5px 50px 0.5px lightgray;
+    border-radius: 10px;
 }
 
 article hr {
      align: center;
      width: 100%;
      border-bottom: 0.5px solid gold;
+}
+
+.top_line {
+    margin-top: 15px;
 }
 
 .post-title {
@@ -85,6 +98,7 @@ article hr {
     text-align: left;
     font-size: 0.9em;
     line-height: 25px;
+    padding-top: 10px;
 }
 
 footer {

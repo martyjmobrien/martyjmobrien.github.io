@@ -36,7 +36,14 @@ a {
     padding: 5px 0px 5px 0px;
     text-decoration: underline;
     background-color: white;
+}
+
+#main_navi li:nth-child(1), #main_navi li:nth-child(n+3) {
     opacity: 0.5;
+}
+
+#main_navi li:nth-child(2) {
+    opacity: 1;
 }
 
 #title {
@@ -55,12 +62,14 @@ article {
     align: center;
     background-color: white;
     width: 50%;
-    height: 73vh;
+    height: 79vh;
     margin-top: 120px;
     margin-left: auto;
     margin-right: auto;
     overflow-y: scroll;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 15px 20px;
+    box-shadow: 0.5px 0.5px 50px 0.5px lightgray;
+    border-radius: 10px;
 }
 
 article hr {
@@ -69,10 +78,13 @@ article hr {
      border-bottom: 0.5px solid gold;
 }
 
+.top_line {
+    margin-top: 15px;
+}
+
 .post-title {
     text-align: center;
     font-size: 1.5em;
-    padding-bottom: 5px;
 }
 
 .post-date {
