@@ -1,8 +1,8 @@
 html {
     background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100%;
+    position: relative;
 }
 
 a {
@@ -23,13 +23,11 @@ a {
 }
 
 article {
-    align: center;
     background-color: white;
     padding: 0px 20px 15px 20px;
 }
 
 article hr {
-     align: center;
      width: 100%;
      border-bottom: 0.5px solid gold;
 }
