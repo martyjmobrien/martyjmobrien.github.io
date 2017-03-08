@@ -12,6 +12,55 @@
 <body>
     <article id="article">
         <hr class="top_line">
+            <p class="post-title"><strong>Javascript, jQuery and Pixel-A-Sketch</strong></p>
+            <p class="post-date">08 Mar 2017</p>
+        <hr>
+        <section class="post-text">
+            <p>I have been planning on updating the blog for a while now but everytime I went to do it I found myself working on my current project more, leading to my blog update becoming outdated.</p><br>
+            <p>After my last post I continued with the Odin Project curriculum and came to the first Javascript/jQuery project in which you are tasked to make a functioning Etch-A-Sketch website.
+               The first thing I thought when reading the project page was "is this all the information you're going to give me?". Looking at the requirements I felt under prepared and didn't really know
+               where to start in terms of the script side. I decided to break the project down into small steps:</p><br>
+            <ol>
+                <li>Create the HTML page with a container in which to create the drawing board and a button for erasing the drawing.</li>
+                <li>Style these elements in the simplest way possible to get a functional layout.</li>
+                <li>Begin to slowly add Javascript/jQuery.</li>
+            </ol><br>
+            <p>The initial HTML and CSS setup was relatively simple, allowing me to quickly move on to fun (and slightly scary) parts. The first thing I needed to tackle was creating a grid of divs within my container.
+               I had previously only created divs within the HTML document and although I had completed assignments on dynamically adding content with jQuery it's not quite the same as doing it yourself from scratch.
+               I figured that if I needed to create a specific number of divs within my container then I could use a loop and the .append() method. First I created a '.square' class in my CSS file (with Display: 
+               inline-block and position: relative) and then appended these one by one within the loop to the container. This created the specified number of divs within my container, however, they didn't have any mass
+               to them so the next step was to size them. At first I did this by simply doing a bit of math and adding it to my '.square' class. My container was 600px x 600px and I wanted a 20x20 grid so I simply
+               had my loop set to end once it had appended 20 divs and set the width and height of my '.square' class to 30px.</p><br>
+            <p>It was now time to add the ability to draw within the container. By utilising the .hover() method I was able to inject CSS into the '.square' class, changing the color from it's default white to black.
+               This also meant using the (this) keyword in order to invoke .hover() on the '.square' class but on inject CSS into the specific div which the mouse was hovering over. Having done this I now had a board
+               which you could draw on. Feeling pretty good about myself I moved on to the reset button.</p><br>
+            <p>Erasing the board wasn't too difficult a task, I simply directed my buttons 'onclick' to the reset function and used the .empty() method on the container, wiping all the created divs. 
+               However, this left me with a blank page which needed to be refresehed. Not ideal and not part of the brief. What I needed was to be able to call the code which created the divs and to do this I took my 
+               appending function outside of my document ready function and instead called it with the grid number as an argument. By having my reset function outside of the document ready function as well I was able to 
+               empty my container and created a new board all in one click. I also took my drawing function out so that it could be called independently. As great as this was it created another problem to 
+               overcome - how to allow the user to choose their grid size.</p><br>
+            <p>For this I used the prompt function and sent the response as an argument to my board creation (appending) function. Once I had the response within my function I then had to write some code which would take 
+               this, divide it by the size of the container (600px) and square it, allowing me to specify the total div amount within my loop and also the size of each div. I included the Math.ceil() function to round 
+               any fractional numbers up to the next whole. I now had a program which was laid out in the following way:</p><br>
+            <ul>
+                <li>Upon load the website automatically created the default drawing grid (20x20).</li>
+                <li>A user could hover over their mouse over the container and draw in the default color (black).</li>
+                <li>Clicking the reset button wiped the created divs from the container, asked the user for a new grid number and created a new board matching the users input.</li>
+            </ul><br>
+            <p>This pretty much concluded the project but I couldn't stop wondering what else could be done. I was asking myself questions like:</p><br>
+            <ul>
+                <li>How would you give the user a choice of colors?</li> 
+                <li>Could those colors have different opacities?</li> 
+                <li>Should the user choose their grid size on page load?</li>
+                <li>What if the user doesn't write a valid number into the prompt?</li>
+            </ul><br>
+            <p>With all these questions going through my mind I decided to tackle them head on and work out how to implement each one. The explanation of how I did them is for another post though as this one is wayyyy
+               to long! You can see and play my Pixel-A-Sketch app at the link at the start of this post. The differences between where I got to in this post and where it is now are plain to see and in another post
+               I will detail how I went about achieving each one and the goals I am still yet to reach!</p>
+        </section>
+
+        </section>
+        <hr class="top_line">
             <p class="post-title"><strong>jQuery</strong></p>
             <p class="post-date">22 Feb 2017</p>
         <hr>

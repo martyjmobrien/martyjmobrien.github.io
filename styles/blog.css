@@ -54,3 +54,7 @@ article hr {
     line-height: 25px;
     padding-top: 10px;
 }
+
+ol, ul{
+    margin-left: 3em;
+}
