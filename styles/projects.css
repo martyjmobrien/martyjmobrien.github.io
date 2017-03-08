@@ -32,6 +32,10 @@ article hr {
      border-bottom: 0.5px solid gold;
 }
 
+.breakers {
+    border-bottom: 0.5px solid grey;
+}
+
 .top_line {
     margin-top: 15px;
 }
