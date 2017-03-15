@@ -1,0 +1,306 @@
+html {
+    background-color: lightslategrey;
+}
+
+.palette {
+    display: none;
+    margin-top: -600px;
+    margin-left: calc(50% - 365px);
+    width: 50px;
+    height: 596px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px lightgrey;
+    padding-top: 4px;
+}
+
+.palette div {
+    width: 35px;
+    height: 35px;
+    margin-top: 28px;
+    margin-left: 7.5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.palette div:hover {
+    width: 45px;
+    height: 45px;
+    margin-left: 2.5px;
+}
+
+#black {
+    background-color: black;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#brown {
+    background-color: brown;
+}
+
+img {
+    width: 35px;
+    height: 35px;
+}
+
+.palette img:hover {
+    width: 45px;
+    height: 45px;
+    margin-left: -1px;
+}
+
+.opacity {
+    display: none;
+    margin-top: -599px;
+    margin-left: calc(50% + 315px);
+    width: 50px;
+    height: 450px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px lightgrey;
+    padding-top: 5px;
+}
+
+.opacity div {
+    width: 35px;
+    height: 35px;
+    margin-top: 60px;
+    margin-left: 7.5px;
+    border-radius: 5px;
+}
+
+.opacity div:hover {
+    width: 45px;
+    height: 45px;
+    margin-left: 2.5px;
+}
+
+#lighter {
+    opacity: 0.2;
+}
+
+#light {
+    opacity: 0.4;
+}
+
+#dark {
+    opacity: 0.7;    
+}
+
+#darker {
+    opacity: 1;    
+}
+
+.toolShape {
+    display: none;
+    margin-top: 18px;
+    margin-left: calc(50% + 315px);
+    width: 50px;
+    height: 120px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px lightgrey;
+    padding-top: 5px;
+}
+
+.toolShape #rectangle {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.toolShape #rectangle:hover {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.toolShape #circle {
+    background-color: black;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.toolShape #circle:hover {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.container {
+    display: none;
+    font-size: 0;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px lightgrey;
+}
+
+#button {
+    display: none;
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 50%;
+    margin-bottom: 15px;
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.newBoardButton {
+    width: 100px;
+    background-color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 1px lightgrey;
+    font-size: 1em;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.newBoardButton:hover {
+    box-shadow: 0 0 20px 5px white;
+}
+
+.startBoardModal {
+    overflow: auto;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin-top: 30px;
+    margin-left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 90%;
+    height: 650px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.start-Modal-Content {
+    background-color: white;
+    margin: 7.5% auto;
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.errorModal {
+    overflow: auto;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin-top: 150px;
+    margin-left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 800px;
+    height: 275px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.error-Modal-Content {
+    background-color: white;
+    margin: 10% auto;
+    border: 1px solid black;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.close {
+    color: darkgray;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -80px;
+    margin-right: -100px;
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+    color: black;
+}
+
+.modalText {
+    text-align: center;
+}
+
+.inputField {
+    margin-left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+#userInputStartBoard, #startSubmit, #errorSubmit {
+    margin-left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.square {
+    display: inline-block;
+    position: relative;
+}
+
+#copyright {
+    display: none;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
