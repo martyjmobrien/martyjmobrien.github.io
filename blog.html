@@ -12,6 +12,39 @@
 <body>
     <article id="article">
         <hr class="top_line">
+            <p class="post-title"><strong>Pixel-A-Sketch and Eloquent Javascript</strong></p>
+            <p class="post-date">16 Mar 2017</p>
+        <hr>
+        <section class="post-text">
+            <p>Continuing on from my last post I thought I would outline some of the additional elements I added to my Pixel-A-Sketch website which I found rewarding and challenging.</p><br>
+            <p>The finished project can be found <a href="pixel-a-sketch.html" target="_blank">HERE</a> and on the projects page</p><br>
+            <p>As I mentioned, I was really interested in where I could take the project after the initial exercise criteria had been met. Thinking about what
+               I wanted to achieve and searching around Google I discovered that most of it (colours, opacity etc) would require Javascript and jQuery which I didn't
+               know so I figured it would be a win win.</p><br>
+            <p>I won't go into how I did every part of the site but there were a few things which stood out which I think are worth mentioning. The first thing is styling.
+               Having completed the initial exercise I was left with a pretty stark website. I set about trying to make it look a bit more appealing with a nice background colour,
+               a little radius on the borders, a nice glow around the new board button etc. At first this was just to explore some CSS and to beautify my project, however, I found that
+               the more I put into it's appearence the more I felt spurred on to add functionality. I think this comes from having something that looks nice and wanting to show it off whilst
+               at the same time wanting to show something off which is more than just colours and borders.</p><br>
+            <p>There were two challenges which I gave myself that I really enjoyed and they were adding the colour palette and creating the custom modals. I enjoyed creating the colour palette
+                for two reasons. The first was that it had a big impact on functionality and what you could actually make. You were no longer constrained to a single colour. The second was that, along
+                with the opacity and tool shape options, it really made me think about the flow of my Javascript and jQuery. Keeping track within the script of which colour was being used, it's opacity etc
+                made me not only challenge myself in terms of how to implement the feature but also how to script it in a way which was logical and simple to follow.</p><br>
+            <p>My custom modals turned out to be a bit of a rabbit hole. Initially I simply used the prompt to get the users grid choice but I didn't like how the prompt box would
+                change between browsers so I started to research custom prompts and found a nice guide on w3schools which went into building modals with Javascript and CSS. This turned out
+                to be a great project in a project as I started to use CSS which I hadn't needed before and also learnt about getting and using data from input fields. At first I simply replaced
+                my new board prompt with a modal but then I thought "maybe I could have an initial modal on page load instead of giving default values", so I did. Then I realised I would need to replace
+                my error prompts for when a user input wasn't valid - this is where I found myself in the rabbit hole. The problem was I tried to do too many things which didn't add to
+                the overall experience and used the code over and over. I made a start modal, a new board modal, a start error modal and a new board error modal. Subtle text differences were
+                really the only differences and in the end I figured that sometimes simple is best. With this in mind I changed it to a single modal for selecting a grid size (with an if statement
+                to make sure that the user could only close the modal if they had already made a board) and a simply error modal letting the user know their input wasn't valid.</p><br>
+            <p>Simple and effective</p><br>
+            <p>I won't bore you with endless details about the project but overall I found it equally challenging and rewarding and maybe in the future when my knowledge has expanded I will revist it</p><br>
+            <p>For now however I am carrying on with the Odin Project and have started to read and go through the exercises in Eloquent Javascript by Marijn Haverbeke. It's an excellent book and the exercises
+               have so far really got me thinking! I am adding my solutions to a folder on my GitHub as I do them.</p>
+        </section>
+
+        <hr class="top_line">
             <p class="post-title"><strong>Javascript, jQuery and Pixel-A-Sketch</strong></p>
             <p class="post-date">08 Mar 2017</p>
         <hr>
